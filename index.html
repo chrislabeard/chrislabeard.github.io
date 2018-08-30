@@ -241,13 +241,34 @@
         $('#complete-total').text(completeTotal.toLocaleString('en-US', { minimumFractionDigits: 1 }));
 
         });
+
+        function happyUrl(string) {
+            var happy = string.replace(/\s+/g, '-').toLowerCase();
+            return happy;
+        }
+
         $('#submit').click(function(e) {
           e.preventDefault();
-          var now = new Date();
+          var filename = 'flatwork-sheet';
+            var date    = new Date(),
+            yr      = date.getFullYear(),
+            month   = date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth(),
+            day     = date.getDate()  < 10 ? '0' + date.getDate()  : date.getDate(),
+            newDate = yr + '-' + month + '-' + day;
+            
+            
+            if($('#builder-text').val().length) {
+                filename += '-' + happyUrl($('#builder-text').val());
+            }
+            if($('#address-text').val().length) {
+                filename += '-' + happyUrl($('#address-text').val());
+            }
+            filename += '-' + newDate;
           var element = document.getElementById('export');
           html2pdf(element, 
             {
               margin: [15, 15, 15, 15],
+              filename: filename,
               html2canvas: { dpi: 300, letterRendering: true },
             }
           );

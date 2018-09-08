@@ -140,7 +140,7 @@ jQuery(document).ready(function ($) {
                 filename: filename,
                 html2canvas: { dpi: 300, letterRendering: true },
             }
-        );
+        );     
         alert('done');
     });
 });

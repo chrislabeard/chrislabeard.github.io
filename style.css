@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+body {
+	background:#000 url(bg_big.jpg) repeat-x top center;
+	margin:0;
+	padding:0;
+	font-family:'Open Sans';
+	font-size:75%;
+}
+
+div {
+	behavior: url(http://the-artillery.net/epk/PIE.htc);
+	position: relative;
+}
+object {z-index:6000;}
+.container {
+	width:960px;
+	margin:0 auto;
+	position: relative;
+
+}
+
+@font-face {
+    font-family: 'artillery';
+    src: url('fonts/museo_slab_500-webfont.eot');
+    src: url('fonts/museo_slab_500-webfont.eot?#iefix') format('eot'),
+         url('fonts/museo_slab_500-webfont.woff') format('woff'),
+         url('fonts/museo_slab_500-webfont.ttf') format('truetype'),
+         url('fonts/museo_slab_500-webfont.svg#webfont3S7jlXC3') format('svg');
+    font-weight: 0;
+    font-style: normal;
+
+}
+
+#logo {
+	padding-top:30px;
+	margin-bottom:30px;
+}
+
+#content {
+	border-radius:.5em 0 0 .5em;
+	-webkit-border-radius:.5em 0 0 .5em;
+	-moz-border-radius: .5em 0 0 .5em;
+	margin-right:385px;
+	padding:10px;
+	background-color:#fff;
+	border-right:1px solid #e0e0e0;
+
+}
+#sidebar {
+	-moz-border-radius:0 0.5em 0.5em 0;
+	-webkit-border-radius:0 0.5em 0.5em 0;
+	border-radius:0 .5em .5em 0;
+	background-color:transparent;
+	width:362px;
+	float:right;
+	padding:10px;
+	color:#fff;
+}
+
+p {
+	line-height:25px;
+	color:#555;
+ 
+}
+.wrapper {
+	background-color:transparent;
+	-webkit-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-moz-border-radius:.5em;
+	-webkit-border-radius:.5em;
+	border-radius:.5em;
+	box-shadow:0 0 30px #000;
+	overflow: hidden;
+	margin-bottom:30px;
+	position: relative;
+}
+.wordtube {
+	-webkit-border-radius:.5em;
+	-moz-border-radius:0.5em 0.5em 0.5em 0.5em;
+	border-radius: .5em;
+	background-color:rgba(0,0,0,.5);
+	box-shadow: 0 1px 1px rgba(255,255,255,.2) inset;
+	padding:5px;
+	width:349px;
+}
+
+.wordtube img {
+	width:348px;
+}
+
+#sidebar ul {
+	list-style-type:none;
+	list-style-image:none;
+	overflow: hidden;
+	padding-left:0;
+}
+
+#connect {
+	position: absolute;
+	top:50px;
+	right:0;
+}
+#connect ul.connect-links {
+	list-style-type:none;
+	overflow: hidden;
+}
+#connect ul.connect-links li {
+	float:left;
+	margin-right:15px;
+}
+#connect ul.connect-links li a {
+	color:#FFF;
+	width:50px;
+	height:50px;
+}
+#connect ul.connect-links li a.facebook {
+	display:block;
+	text-indent:-9999px;
+	background:transparent url(images/facebook.png) no-repeat top center;
+}
+#connect ul.connect-links li a.myspace {
+	display:block;
+	text-indent:-9999px;
+	background:transparent url(images/myspace.png) no-repeat top center;
+}
+	
+ul.venues li {
+	margin-bottom:5px;
+	float:left;
+	padding:5px;
+	background-color:rgba(0,0,0,.3);
+	width:47%;
+
+}
+ul.venues li:hover {
+	background-color:#d66228;
+	color:#FFF;
+}
+
+ul.members li {
+	float:left;
+	margin-right:10px;
+}
+
+a#contact {
+	width:152px;
+	height:150px;
+	display:block;
+	background:transparent url(images/contact.png) no-repeat center 1px;
+	position: absolute;
+	z-index:500;
+	right:-2px;
+	top:-2px;
+}
+a#contact:hover {
+	background-position: center -149px;
+}
+h2 {
+	text-transform: lowercase;
+	font-size:25px;
+	font-weight:300;
+}
+#sidebar h2 {
+	color:#fff;
+}
+.welcome-message {
+	padding:10px;
+	background:#f5f9fc;
+	border:1px solid #d9e8f3;
+}
+.welcome-message h2 {
+	text-transform: none;
+	color:#5fa0d1;
+}
+ul.members {
+	display:none;
+}
+
+p.italic {
+	font-style: italic;
+	color:#fff;
+	font-size:20px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.label {
+	font-weight: bold;
+	color:rgba(255,255,255,.6);
+}
+.name {color:#000;}
+.inline-picture {
+	padding:5px;
+	background-color:#fff;
+	border-bottom:1px solid #e0e0e0;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	border-top:1px solid #f4f4f4;
+}
+#fancybox-content {
+	border-color:transparent !important;
+	background:#000 url() no-repeat center center;
+}
+
+#fancybox-frame {
+	box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+.iframe.video {
+	float:left;
+	margin-right:15px;
+	text-decoration: none;
+	padding:5px;
+	background: #fff;
+	border:1px solid #eee;
+	position: relative;
+}
+.iframe.video img {
+	margin-bottom:-10px;
+}
+.caption {
+	display: block;
+	text-align: center;
+	background: #3da0b7;
+	color:#fff;
+	text-decoration: none;
+	font-size:11px;
+
+}
+.overlay-play {
+	position: absolute;
+	width:150px;
+	height:150px;
+	background: transparent url(images/overlay_play.png) no-repeat top center;
+	top:5px;
+	left:5px;
+	opacity: 0;
+}
+.iframe.video:hover .overlay-play {
+	opacity: 1;
+}

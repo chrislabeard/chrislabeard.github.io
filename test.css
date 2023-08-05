@@ -1,0 +1,42 @@
+body {
+	font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;
+	margin:0;
+	padding:0;
+}
+#navigation ul {
+	list-style-type:none;
+	list-style-image:none;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+	float:right;
+	padding-top:20px;
+}
+#navigation ul li {
+	float:left;
+	padding-left:0;
+	margin-right:20px;
+}
+#navigation ul li a {
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+h2 {
+
+}
+.section {
+	float:left;
+	width:100%;
+	height:4000px;
+}
+#home {
+	background:#000 url(http://tympanus.net/Tutorials/WebsiteScrolling/images/black_vert.jpg) repeat-x bottom center;
+
+}
+#about {
+	background:#FFF url(http://tympanus.net/Tutorials/WebsiteScrolling/images/white_vert.jpg) repeat-x bottom center;
+
+}
